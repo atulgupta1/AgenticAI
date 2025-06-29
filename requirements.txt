@@ -1,0 +1,8 @@
+uv
+langgraph
+langchain
+langsmith
+python-dotenv
+langchain-groq
+ipython
+langchain-tavily
