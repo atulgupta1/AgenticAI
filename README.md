@@ -45,6 +45,33 @@ Built using **LangChain**, **LangGraph**, and **Groq’s ChatGroq (LLaMA3 8B)**,
   - `GROQ_API_KEY` (for ChatGroq)
   - `TAVILY_API_KEY` (optional, for web search)
 
+### Architecture Overview
+Component	Description
+LangGraph StateGraph	Defines node logic, transitions, and message reducers
+LangChain Chat Models	Uses Groq’s ChatGroq (LLaMA3-8B) for chat completion
+Tools	Includes search tools, human interrupts, and custom functions
+MemorySaver	Checkpoints state and conversation history
+
+### 🤝 Contributing
+Contributions are welcome!
+If you have suggestions, bug reports, or improvements:
+
+Open an issue
+
+Submit a pull request
+
+Or start a discussion on how to extend the framework
+
+### 📄 License
+This project is licensed under the MIT License.
+
+### 📬 Contact
+Atul Gupta
+📧 Email: atul.svnit11@gmail.com
+🔗 GitHub: https://github.com/atulgupta1
+
+
+
 ### 📦 Installation
 
 ```bash
@@ -78,29 +105,4 @@ response = agent.invoke({
 })
 
 print(response["messages"][-1].content)
-
-### Architecture Overview
-Component	Description
-LangGraph StateGraph	Defines node logic, transitions, and message reducers
-LangChain Chat Models	Uses Groq’s ChatGroq (LLaMA3-8B) for chat completion
-Tools	Includes search tools, human interrupts, and custom functions
-MemorySaver	Checkpoints state and conversation history
-
-### 🤝 Contributing
-Contributions are welcome!
-If you have suggestions, bug reports, or improvements:
-
-Open an issue
-
-Submit a pull request
-
-Or start a discussion on how to extend the framework
-
-### 📄 License
-This project is licensed under the MIT License.
-
-### 📬 Contact
-Atul Gupta
-📧 Email: atul.svnit11@gmail.com
-🔗 GitHub: https://github.com/atulgupta1
 
