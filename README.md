@@ -1,7 +1,7 @@
-AgenticAI
+**AgenticAI**
 AgenticAI is a modular framework and reference implementation for building intelligent AI agents that combine Large Language Models (LLMs) with multi-tool orchestration, human-in-the-loop assistance, and stateful conversation management. Powered by LangChain, LangGraph, and Groq’s ChatGroq model, AgenticAI enables flexible, interactive AI workflows for research, experimentation, and production prototyping.
 
-Features
+**Features**
 Multi-tool integration: Seamlessly use search tools (e.g., TavilySearch), human assistance, and custom logic within a single agent.
 
 Stateful conversation graphs: Manage complex conversations with state machines via LangGraph’s StateGraph abstractions.
@@ -16,7 +16,7 @@ Streamed and async responses: Supports real-time streaming and asynchronous inte
 
 Memory & checkpointing: Save and resume conversation state with persistent memory layers.
 
-Getting Started
+**Getting Started**
 Prerequisites
 Python 3.9+
 
@@ -28,8 +28,7 @@ Groq API key (GROQ_API_KEY)
 
 Tavily API access (if using TavilySearch tool)
 
-Installation
-
+**Installation**
 git clone https://github.com/atulgupta1/AgenticAI.git
 cd AgenticAI
 python -m venv .venv
@@ -46,12 +45,11 @@ Load environment variables in your Python code with:
 
 from dotenv import load_dotenv
 load_dotenv()
-Usage
+
+**Usage**
 A simple example to initialize the agent and run a query:
 
-python
-Copy
-Edit
+
 from langchain_groq import ChatGroq
 from langchain_tavily import TavilySearch
 from your_agenticai_module import build_agent_graph  # your graph-building function
@@ -67,7 +65,9 @@ response = agent.invoke({
 })
 
 print(response["messages"][-1].content)
-Architecture Overview
+
+
+**Architecture Overview**
 LangGraph StateGraph: Defines states and transitions in conversation flow.
 
 LangChain Chat Models: ChatGroq LLM integration for language generation.
@@ -76,13 +76,13 @@ Tools: Custom functions, search tools, and human assistance decorators.
 
 MemorySaver: Checkpointing and persistence layer for conversation continuity.
 
-Contributing
+**Contributing**
 Contributions welcome! Please open issues or PRs for bug fixes, features, or improvements.
 For major changes, please open an issue first to discuss your ideas.
 
-License
+**License**
 This project is licensed under the MIT License.
 
-Contact
+**Contact**
 Atul Gupta – atul.svnit11@gmail.com
 GitHub: https://github.com/atulgupta1
